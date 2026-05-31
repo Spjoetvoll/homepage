@@ -44,9 +44,9 @@
   "showcase": {
     "label": "Fremhevet prosjekt",
     "title": "Sommer i Melhus",
-    "badge": "Frilanser — Publisert app",
+    "badge": "Frilanser — 2021",
     "projectTitle": "Sommer i Melhus",
-    "description": "Eventapp for sommeraktiviteter i Melhus, Norge. Bygget som frilansarbeid for kommunen med tospråklig støtte, kalendervisning og søkefiltrering. Tilgjengelig på både iOS og Android."
+    "description": "Eventapp for sommeraktiviteter i Melhus, Norge. Bygget som frilansarbeid for kommunen med tospråklig støtte, kalendervisning og søkefiltrering. Publisert på iOS og Android for sommersesongen 2021."
   },
   "technologies": {
     "title": "Teknologier",

@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useAnimateIn } from '../../hooks/useAnimateIn';
 import styles from './Showcase.module.css';
 
@@ -83,10 +83,7 @@ export function Showcase() {
               ))}
             </div>
             <div className={styles.links}>
-              <a href='https://apps.apple.com/no/app/sommer-i-melhus/id1571261508' target='_blank' rel='noopener noreferrer' className={styles.link}>
-                <ExternalLink size={13} /> App Store
-              </a>
-              <a href='https://github.com/Xytek/Melhussommer' target='_blank' rel='noopener noreferrer' className={styles.link}>
+              <a href='https://github.com/Spjoetvoll/Melhussommer' target='_blank' rel='noopener noreferrer' className={styles.link}>
                 <ArrowUpRight size={13} /> Source
               </a>
             </div>
