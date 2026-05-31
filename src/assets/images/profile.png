@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1a1a2e"/>
+  <circle cx="200" cy="160" r="60" fill="#4a4a6a"/>
+  <ellipse cx="200" cy="320" rx="90" ry="80" fill="#4a4a6a"/>
+  <text x="200" y="390" text-anchor="middle" fill="#8888a8" font-family="sans-serif" font-size="12">Replace with profile.png</text>
+</svg>

@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Morten Spjøtvoll",
+    "title": "Software Architect",
+    "subtitle": "Building scalable systems & crafting elegant solutions from Norway",
+    "cta": "Get in touch",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A passionate developer with a love for clean architecture",
+    "bio1": "I'm a Software Architect based in Norway with over 6 years of professional experience building enterprise-grade systems. I design and develop fullstack solutions — from mobile apps and web frontends to backend microservices and infrastructure automation.",
+    "bio2": "Currently working at Hansen Technologies, where I architect and maintain large-scale billing and CRM systems. I specialize in building offline-first applications, distributed systems, and developer tooling that makes teams more productive.",
+    "bio3": "When I'm not coding, I'm probably exploring new technologies, contributing to open source, or hitting the gym. I believe in owning your data, writing clean code, and building software that respects its users.",
+    "experience": "Years Experience",
+    "projects": "Projects Delivered",
+    "technologies": "Technologies"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected projects I've designed and built",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "projects": {
+      "sethabit": {
+        "title": "SetHabit",
+        "description": "Offline-first fitness tracker with full data ownership. Cross-platform mobile app with custom sync engine, habit tracking, workout logging, and progress analytics.",
+        "tags": ["Flutter", "Go", "PostgreSQL", "SQLite", "REST API"]
+      },
+      "sysopoly-infra": {
+        "title": "Sysopoly Infrastructure",
+        "description": "Infrastructure-as-Code platform managing containerized microservices. Automated deployment, encrypted secrets management, and monitoring — all self-hosted on a VPS.",
+        "tags": ["Puppet", "Podman", "Quadlet", "Nginx", "SOPS", "Restic"]
+      },
+      "auth-service": {
+        "title": "OAuth2 Auth Service",
+        "description": "Custom-built authentication microservice with OAuth2 PKCE flow, JWT token management, refresh rotation, and multi-provider support (Google, Apple).",
+        "tags": ["Go", "JWT", "OAuth2", "PostgreSQL", "PKCE"]
+      },
+      "melhus": {
+        "title": "Sommer i Melhus",
+        "description": "Event browsing app for summer activities in Melhus, Norway. Built as freelance work with bilingual support, calendar view, and search filtering.",
+        "tags": ["React Native", "Expo", "JavaScript", "iOS", "Android"]
+      },
+      "deploy-webhook": {
+        "title": "Deploy Webhook Service",
+        "description": "Automated deployment pipeline triggered by container registry webhooks. Validates signatures, pulls images, and restarts services with zero downtime.",
+        "tags": ["Go", "Webhooks", "Podman", "Systemd"]
+      },
+      "homepage": {
+        "title": "This Website",
+        "description": "My personal portfolio built with React 19, TypeScript, and CSS Modules. Features dark mode, i18n support, and a clean component architecture.",
+        "tags": ["React", "TypeScript", "Vite", "CSS Modules", "i18n"]
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "Tools and technologies I work with daily",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend & Infrastructure",
+      "databases": "Databases & Data",
+      "devops": "DevOps & Cloud",
+      "tools": "Tools & Platforms"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email me directly.",
+    "directEmail": "Or email me directly at"
+  },
+  "footer": {
+    "copyright": "© {{year}} Morten Spjøtvoll. All rights reserved.",
+    "builtWith": "Built with React & TypeScript"
+  }
+}

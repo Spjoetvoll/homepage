@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "about": "Om meg",
+    "portfolio": "Portefølje",
+    "technologies": "Teknologier",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hei, jeg er",
+    "name": "Morten Spjøtvoll",
+    "title": "Programvarearkitekt",
+    "subtitle": "Bygger skalerbare systemer og elegante løsninger fra Norge",
+    "cta": "Ta kontakt",
+    "scroll": "Scroll for å utforske"
+  },
+  "about": {
+    "title": "Om meg",
+    "subtitle": "En lidenskapelig utvikler med kjærlighet for ren arkitektur",
+    "bio1": "Jeg er en programvarearkitekt basert i Norge med over 6 års profesjonell erfaring med å bygge enterprise-systemer. Jeg designer og utvikler fullstack-løsninger — fra mobilapper og webfrontends til backend-mikrotjenester og infrastrukturautomatisering.",
+    "bio2": "Jobber for tiden hos Hansen Technologies, hvor jeg arkitekterer og vedlikeholder storskala fakturerings- og CRM-systemer. Jeg spesialiserer meg i å bygge offline-first-applikasjoner, distribuerte systemer og utviklerverktøy som gjør team mer produktive.",
+    "bio3": "Når jeg ikke koder, utforsker jeg sannsynligvis nye teknologier, bidrar til åpen kildekode, eller trener. Jeg tror på å eie egne data, skrive ren kode og bygge programvare som respekterer brukerne sine.",
+    "experience": "Års erfaring",
+    "projects": "Leverte prosjekter",
+    "technologies": "Teknologier"
+  },
+  "portfolio": {
+    "title": "Portefølje",
+    "subtitle": "Utvalgte prosjekter jeg har designet og bygget",
+    "viewProject": "Se prosjekt",
+    "viewCode": "Se kode",
+    "projects": {
+      "sethabit": {
+        "title": "SetHabit",
+        "description": "Offline-first treningsapp med full dataeierskap. Kryssplattform mobilapp med tilpasset synkroniseringsmotor, vanesporing, treningslogging og fremdriftsanalyse.",
+        "tags": ["Flutter", "Go", "PostgreSQL", "SQLite", "REST API"]
+      },
+      "sysopoly-infra": {
+        "title": "Sysopoly Infrastruktur",
+        "description": "Infrastructure-as-Code-plattform som administrerer containeriserte mikrotjenester. Automatisert utrulling, kryptert hemmelighetsadministrasjon og overvåkning — alt selvhostet på en VPS.",
+        "tags": ["Puppet", "Podman", "Quadlet", "Nginx", "SOPS", "Restic"]
+      },
+      "auth-service": {
+        "title": "OAuth2 Autentiseringstjeneste",
+        "description": "Egenutviklet autentiseringsmikrotjeneste med OAuth2 PKCE-flyt, JWT-tokenadministrasjon, refresh-rotasjon og støtte for flere leverandører (Google, Apple).",
+        "tags": ["Go", "JWT", "OAuth2", "PostgreSQL", "PKCE"]
+      },
+      "melhus": {
+        "title": "Sommer i Melhus",
+        "description": "Eventapp for sommeraktiviteter i Melhus, Norge. Bygget som frilansarbeid med tospråklig støtte, kalendervisning og søkefiltrering.",
+        "tags": ["React Native", "Expo", "JavaScript", "iOS", "Android"]
+      },
+      "deploy-webhook": {
+        "title": "Deploy Webhook-tjeneste",
+        "description": "Automatisert utrullingspipeline utløst av container registry-webhooks. Validerer signaturer, henter images og restarter tjenester uten nedetid.",
+        "tags": ["Go", "Webhooks", "Podman", "Systemd"]
+      },
+      "homepage": {
+        "title": "Denne nettsiden",
+        "description": "Min personlige portefølje bygget med React 19, TypeScript og CSS Modules. Med mørk modus, i18n-støtte og ren komponentarkitektur.",
+        "tags": ["React", "TypeScript", "Vite", "CSS Modules", "i18n"]
+      }
+    }
+  },
+  "technologies": {
+    "title": "Teknologier",
+    "subtitle": "Verktøy og teknologier jeg jobber med daglig",
+    "categories": {
+      "languages": "Språk",
+      "frontend": "Frontend",
+      "backend": "Backend & Infrastruktur",
+      "databases": "Databaser & Data",
+      "devops": "DevOps & Sky",
+      "tools": "Verktøy & Plattformer"
+    }
+  },
+  "contact": {
+    "title": "Ta kontakt",
+    "subtitle": "Har du et prosjekt i tankene? La oss snakke.",
+    "nameLabel": "Navn",
+    "namePlaceholder": "Ditt navn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din@epost.no",
+    "messageLabel": "Melding",
+    "messagePlaceholder": "Fortell meg om prosjektet ditt...",
+    "send": "Send melding",
+    "sending": "Sender...",
+    "success": "Melding sendt! Jeg svarer deg snart.",
+    "error": "Noe gikk galt. Prøv igjen eller send meg en e-post direkte.",
+    "directEmail": "Eller send meg e-post direkte på"
+  },
+  "footer": {
+    "copyright": "© {{year}} Morten Spjøtvoll. Alle rettigheter forbeholdt.",
+    "builtWith": "Bygget med React & TypeScript"
+  }
+}
