@@ -1,0 +1,66 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Login to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Notify Uptime Kuma (success)
+        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master' && secrets.KUMA_PUSH_TOKEN != ''
+        run: |
+          curl -fsS -o /dev/null \
+            "https://status.sysopoly.com/api/push/${{ secrets.KUMA_PUSH_TOKEN }}?status=up&msg=Build+passed" || true
+
+      - name: Notify Uptime Kuma (failure)
+        if: failure() && github.event_name == 'push' && github.ref == 'refs/heads/master' && secrets.KUMA_PUSH_TOKEN != ''
+        run: |
+          curl -fsS -o /dev/null \
+            "https://status.sysopoly.com/api/push/${{ secrets.KUMA_PUSH_TOKEN }}?status=down&msg=Build+failed" || true
