@@ -1,5 +1,5 @@
 @import './variables.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
 
 *,
 *::before,
@@ -16,23 +16,35 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: var(--font-size-base);
-  line-height: 1.7;
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color var(--transition-base), color var(--transition-base);
+  overflow-x: hidden;
+  transition: background-color var(--duration-slow) var(--ease-out),
+              color var(--duration-base) var(--ease-out);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: var(--noise-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 a {
   color: var(--color-accent);
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: color var(--duration-fast) var(--ease-out);
 }
 
 a:hover {
-  color: var(--color-accent-hover);
+  color: var(--color-accent-secondary);
 }
 
 img {
@@ -46,16 +58,10 @@ button {
   border: none;
   background: none;
   font-family: inherit;
-  font-size: inherit;
 }
 
 ul, ol {
   list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: var(--font-weight-bold);
 }
 
 ::selection {
@@ -64,43 +70,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  padding: var(--space-24) var(--space-6);
+  padding: var(--section-padding) 1.5rem;
+  position: relative;
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: var(--container-max);
   margin: 0 auto;
   width: 100%;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: var(--space-16);
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
 }
 
 .section-title {
-  font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-4);
-  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  font-size: var(--font-size-lg);
+  font-size: 1.125rem;
   color: var(--color-text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .section {
-    padding: var(--space-16) var(--space-4);
-  }
-
-  .section-title {
-    font-size: var(--font-size-3xl);
-  }
+  max-width: 540px;
+  line-height: 1.7;
 }
