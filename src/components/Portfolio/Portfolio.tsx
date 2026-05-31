@@ -6,10 +6,6 @@ import styles from './Portfolio.module.css';
 
 const projects: (Project & { featured?: boolean })[] = [
   { id: 'sethabit', url: 'https://sethabit.app', codeUrl: 'https://github.com/Sysopoly', featured: true },
-  { id: 'sysopoly-infra', codeUrl: 'https://github.com/Sysopoly/infrastructure' },
-  { id: 'auth-service', codeUrl: 'https://github.com/Sysopoly/auth-service' },
-  { id: 'melhus', url: 'https://apps.apple.com/no/app/sommer-i-melhus/id1571261508', codeUrl: 'https://github.com/Xytek/Melhussommer' },
-  { id: 'deploy-webhook', codeUrl: 'https://github.com/Sysopoly/deploy-webhook' },
   { id: 'homepage', codeUrl: 'https://github.com/Sysopoly/homepage' },
 ];
 

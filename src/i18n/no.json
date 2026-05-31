@@ -34,32 +34,19 @@
         "description": "Offline-first treningsapp med full dataeierskap. Kryssplattform mobilapp med tilpasset synkroniseringsmotor, vanesporing, treningslogging og fremdriftsanalyse.",
         "tags": ["Flutter", "Go", "PostgreSQL", "SQLite", "REST API"]
       },
-      "sysopoly-infra": {
-        "title": "Sysopoly Infrastruktur",
-        "description": "Infrastructure-as-Code-plattform som administrerer containeriserte mikrotjenester. Automatisert utrulling, kryptert hemmelighetsadministrasjon og overvåkning — alt selvhostet på en VPS.",
-        "tags": ["Puppet", "Podman", "Quadlet", "Nginx", "SOPS", "Restic"]
-      },
-      "auth-service": {
-        "title": "OAuth2 Autentiseringstjeneste",
-        "description": "Egenutviklet autentiseringsmikrotjeneste med OAuth2 PKCE-flyt, JWT-tokenadministrasjon, refresh-rotasjon og støtte for flere leverandører (Google, Apple).",
-        "tags": ["Go", "JWT", "OAuth2", "PostgreSQL", "PKCE"]
-      },
-      "melhus": {
-        "title": "Sommer i Melhus",
-        "description": "Eventapp for sommeraktiviteter i Melhus, Norge. Bygget som frilansarbeid med tospråklig støtte, kalendervisning og søkefiltrering.",
-        "tags": ["React Native", "Expo", "JavaScript", "iOS", "Android"]
-      },
-      "deploy-webhook": {
-        "title": "Deploy Webhook-tjeneste",
-        "description": "Automatisert utrullingspipeline utløst av container registry-webhooks. Validerer signaturer, henter images og restarter tjenester uten nedetid.",
-        "tags": ["Go", "Webhooks", "Podman", "Systemd"]
-      },
       "homepage": {
         "title": "Denne nettsiden",
         "description": "Min personlige portefølje bygget med React 19, TypeScript og CSS Modules. Med mørk modus, i18n-støtte og ren komponentarkitektur.",
         "tags": ["React", "TypeScript", "Vite", "CSS Modules", "i18n"]
       }
     }
+  },
+  "showcase": {
+    "label": "Fremhevet prosjekt",
+    "title": "Sommer i Melhus",
+    "badge": "Frilanser — Publisert app",
+    "projectTitle": "Sommer i Melhus",
+    "description": "Eventapp for sommeraktiviteter i Melhus, Norge. Bygget som frilansarbeid for kommunen med tospråklig støtte, kalendervisning og søkefiltrering. Tilgjengelig på både iOS og Android."
   },
   "technologies": {
     "title": "Teknologier",

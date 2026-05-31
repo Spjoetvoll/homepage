@@ -34,32 +34,19 @@
         "description": "Offline-first fitness tracker with full data ownership. Cross-platform mobile app with custom sync engine, habit tracking, workout logging, and progress analytics.",
         "tags": ["Flutter", "Go", "PostgreSQL", "SQLite", "REST API"]
       },
-      "sysopoly-infra": {
-        "title": "Sysopoly Infrastructure",
-        "description": "Infrastructure-as-Code platform managing containerized microservices. Automated deployment, encrypted secrets management, and monitoring — all self-hosted on a VPS.",
-        "tags": ["Puppet", "Podman", "Quadlet", "Nginx", "SOPS", "Restic"]
-      },
-      "auth-service": {
-        "title": "OAuth2 Auth Service",
-        "description": "Custom-built authentication microservice with OAuth2 PKCE flow, JWT token management, refresh rotation, and multi-provider support (Google, Apple).",
-        "tags": ["Go", "JWT", "OAuth2", "PostgreSQL", "PKCE"]
-      },
-      "melhus": {
-        "title": "Sommer i Melhus",
-        "description": "Event browsing app for summer activities in Melhus, Norway. Built as freelance work with bilingual support, calendar view, and search filtering.",
-        "tags": ["React Native", "Expo", "JavaScript", "iOS", "Android"]
-      },
-      "deploy-webhook": {
-        "title": "Deploy Webhook Service",
-        "description": "Automated deployment pipeline triggered by container registry webhooks. Validates signatures, pulls images, and restarts services with zero downtime.",
-        "tags": ["Go", "Webhooks", "Podman", "Systemd"]
-      },
       "homepage": {
         "title": "This Website",
         "description": "My personal portfolio built with React 19, TypeScript, and CSS Modules. Features dark mode, i18n support, and a clean component architecture.",
         "tags": ["React", "TypeScript", "Vite", "CSS Modules", "i18n"]
       }
     }
+  },
+  "showcase": {
+    "label": "Featured Project",
+    "title": "Sommer i Melhus",
+    "badge": "Freelance — Published App",
+    "projectTitle": "Sommer i Melhus",
+    "description": "Event browsing app for summer activities in Melhus, Norway. Built as freelance work for the municipality with bilingual support, calendar view, and search filtering. Available on both iOS and Android."
   },
   "technologies": {
     "title": "Technologies",
