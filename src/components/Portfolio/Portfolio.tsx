@@ -5,8 +5,8 @@ import type { Project } from '../../types';
 import styles from './Portfolio.module.css';
 
 const projects: (Project & { featured?: boolean })[] = [
-  { id: 'sethabit', url: 'https://sethabit.app', codeUrl: 'https://github.com/Sysopoly', featured: true },
-  { id: 'homepage', codeUrl: 'https://github.com/Sysopoly/homepage' },
+  { id: 'sethabit', url: 'https://sethabit.app', codeUrl: 'https://github.com/Spjoetvoll', featured: true },
+  { id: 'homepage', codeUrl: 'https://github.com/Spjoetvoll/homepage' },
 ];
 
 export function Portfolio() {
